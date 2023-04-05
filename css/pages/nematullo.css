@@ -1,5 +1,6 @@
 @import "../base/reset.css";
 @import "../layout/container.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
 html {
@@ -117,12 +118,6 @@ main .section1 .sec1 .section__right .right .right-img .lor {
 main .section1 .sec1 .section__right .right .right-img .qiz {
   margin-right: 24px;
 }
-
-
-
-
-
-
 
 a.btn {
   background: #0096a0;
@@ -333,10 +328,6 @@ main .section2 .sec2 .edit {
   text-align: center;
   color: #525560;
 }
-
-
-
-
 
 
 main .section3 .sec3 {
@@ -922,7 +913,6 @@ main .section4 {
   padding-left: 20px;
   margin-right: 20px;
 }
-
 main .section4 .sec4 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.473)), url(../../images/home/contribute.png);
   width: 100%;
@@ -930,7 +920,6 @@ main .section4 .sec4 {
   margin-bottom: 96px;
   border-radius: 10px;
 }
-
 main .section4 .sec4 h1 {
   width: 50%;
   margin: auto;
@@ -944,21 +933,17 @@ main .section4 .sec4 h1 {
   color: #FFFFFF;
   padding-bottom: 32px;
 }
-
 main .section4 .sec4 .button {
   display: flex;
   justify-content: center;
 }
-
 main .section4 .sec4 .button .donatee {
   margin-left: 32px;
 }
-
 main .section4 .sec4 .button button {
   all: unset;
   cursor: pointer;
 }
-
 main .section4 .sec4 .button .join a {
   border-radius: 4px;
   background-color: #70C174;
@@ -972,11 +957,9 @@ main .section4 .sec4 .button .join a {
   line-height: 19px;
   transition: .5s;
 }
-
 main .section4 .sec4 .button .join a:hover {
   background-color: transparent;
 }
-
 main .section4 .sec4 .button .donatee a {
   padding: 16px 32px;
   background-color: white;
@@ -990,23 +973,13 @@ main .section4 .sec4 .button .donatee a {
   line-height: 19px;
   transition: .5s;
 }
-
 main .section4 .sec4 .button .donatee a:hover {
   background-color: transparent;
   color: white;
 }
-
 main .hr {
   padding: 0px 20px;
 }
-
-
-
-
-
-
-
-
 main .section4 .sec4 .button .join .modal .modal-dialog .modal-content .modal-body .btn {
   padding: 16px 32px;
   background-color: #70C174;
@@ -1017,6 +990,88 @@ main .section4 .sec4 .button .join .modal .modal-dialog .modal-content .modal-bo
   width: 87%;
 }
 
+.container{
+	max-width: 1160px;
+	margin:auto;
+}
+.row{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	justify-content: space-between;
+	padding: 0px 20px;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 100%;
+}
+.col1{
+	width: 50%;
+	padding: 0 5px;
+ }
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links{
+	display: flex;
+}
+.footer-col .social-links input{
+	padding: 10px 5px;
+	border: 1px solid rgba(235, 240, 249, 0.3);
+	background-color: transparent;
+	border-radius: 4px;
+	outline: none;
+	color: white;
+}
+input::placeholder{
+	color: white;
+}
+.footer-col .social-links button{
+	border-radius: 4px;
+	color: #24262b;
+	background-color: #ffffff;
+	padding: 1px 10px;
+	border: none;
+	cursor: pointer;
+	margin-left: -10px;
+}
 
 
 
@@ -1123,6 +1178,17 @@ main .section4 .sec4 .button .join .modal .modal-dialog .modal-content .modal-bo
   .section3 .sec3 .flex .bottom .left .r {
     margin-top: 20px;
   }
+}
+
+@media(max-width: 957px){
+	.row{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+	}
+	.col1{
+		width: 100%;
+		padding: 0 5px;
+	 }
 }
 
 @media (max-width: 950px) {
@@ -1249,6 +1315,14 @@ main .section4 .sec4 .button .join .modal .modal-dialog .modal-content .modal-bo
   }
 }
 
+@media(max-width: 650px){
+	.row{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		gap: 25px;
+	}
+}
+
 @media (max-width: 630px) {
   main .contact .con1 .contact__right {
     flex-direction: column;
@@ -1304,6 +1378,30 @@ main .section4 .sec4 .button .join .modal .modal-dialog .modal-content .modal-bo
   }
 }
 
+@media(max-width: 500px){
+	.row{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		gap: 25px;
+		text-align: center;
+	}
+	.footer-col .social-links{
+		display: flex;
+		justify-content: center;
+	}
+	.footer-col h4::before{
+		content: '';
+		position: absolute;
+		left:0;
+		bottom: -10px;
+		background-color: #e91e63;
+		height: 2px;
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
 @media (max-width: 500px) {
   main .section3 .sec3 .bottom .left {
     padding-top: 10px !important;
@@ -1353,7 +1451,6 @@ main .section4 .sec4 .button .join .modal .modal-dialog .modal-content .modal-bo
     margin: auto;
     font-size: 28px;
   }
-
 }
 
 @media (max-width: 360px) {
