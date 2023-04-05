@@ -78,7 +78,7 @@ div.card {
   transition: all 0.3s 0s ease-in;
   width: 300px;
   z-index: 1;
-  transform: scale(0.93);
+  transform: scale(0.90);
 }
 
 div.card .card__image-holder {

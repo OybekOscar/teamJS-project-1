@@ -1,10 +1,8 @@
 @import "./base/font.css";
 @import "./base/reset.css";
 @import "./base/variables.css";
-
 @import "./layout/container.css";
 @import "./layout/header.css";
 @import "./layout/footer.css";
-@import "pages/samariddin.css";
-@import "pages/nematullo.css";
-@import "./module/samariddin-nav.css"
+@import "./module/samariddin-nav.css";
+@import "module/samariddin-cards.css"
