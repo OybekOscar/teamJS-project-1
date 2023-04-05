@@ -1,23 +1,23 @@
 @import "../global.css";
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 1500px;
     font-family: 'Roboto';
-}
+} */
 
 
 
-.conteiner{
+/* .conteiner{
     position: relative;
     max-width: 832px;
-    /* display: flex; */
+    
     margin: 0px auto;
     display: grid;
     justify-content: center; 
-}
+} */
 
 .line{
     display: flex;
@@ -64,11 +64,11 @@
 }
 
 .qwerty{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
     background-color: #EBF0F9;
-    overflow: hidden;
+    
 }
 
 .qwerty-item{
@@ -89,8 +89,6 @@
 }
 
 .content{
-    
-    margin-left: 200px;
     width: 436px;
 }
 
@@ -392,9 +390,7 @@ input[type="checkbox"] {
         margin: 0px;
         padding: 0px;
     }
-    .content{
-        margin-left: 0px;
-    }
+  
 }
 
 @media(max-width: 600px){
