@@ -12,7 +12,11 @@
 @import url(../base/reset.css);
 @import url(../base/font.css);
 @import url(../pages/home.css);
+<<<<<<< HEAD
 /* @import url(../pages/nematullo.css); */
+=======
+
+>>>>>>> 5591da24807ba94b6509a682a5a58a3c50118386
 
 main .section4 .sec4 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.473)), url(../../images/home/contribute.png);

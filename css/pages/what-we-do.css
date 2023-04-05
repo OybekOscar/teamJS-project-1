@@ -11,8 +11,6 @@
 @import url(../layout/container.css);
 @import url(../base/reset.css);
 @import url(../base/font.css);
-@import url(../pages/home.css);
-@import url(../pages/nematullo.css);
 
 main .section4 .sec4 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.473)), url(../../images/home/contribute.png);
@@ -215,12 +213,57 @@ color: #1D2130;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-bottom: 104px;
+}
+.cards{
+  padding-bottom: 96px;
+}
+.line__read h3{
+  font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 140%;
+/* identical to box height, or 56px */
+
+
+/* Primary text */
+padding-bottom: 48px;
+color: #1D2130;
+
 }
 .cast1 p{
 margin-left: 50px;
 }
- 
+.cast1{
+  
+  padding-top: 64px;
+}
+ .envi h1{
+  padding-top: 96px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+/* identical to box height, or 58px */
+
+
+/* Primary text */
+
+color: #1D2130;
+
+ }
 
 .about{
     padding-top: 96px;
+}
+@media ( max-width : 800px ){
+  .casti{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width:800px){
+  .casti{
+    grid-template-columns: 1fr 1fr;
+  }
 }
