@@ -49,6 +49,7 @@ ul{
     color: #525560;
     font-size: 16px;
     margin-left: 20px;
+    list-style-type: square;
 }
 
 .conten-end-p{
@@ -67,4 +68,11 @@ ul{
         margin: 0;
         padding: 0;
     }
+}
+
+@media (max-width: 620px){
+    section{
+        max-width: 200px;
+    }
+
 }
