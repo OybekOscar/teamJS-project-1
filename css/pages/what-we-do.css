@@ -257,3 +257,13 @@ color: #1D2130;
 .about{
     padding-top: 96px;
 }
+@media ( max-width : 800px ){
+  .casti{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width:800px){
+  .casti{
+    grid-template-columns: 1fr 1fr;
+  }
+}
