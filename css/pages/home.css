@@ -4,3 +4,70 @@
 @import "../module/donate-card.css";
 @import "../module/news-row.css";
 @import "../module/event-row.css";
+
+.home{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../images/home-page/BG\ Image.png);
+}
+.section__home-up{
+    width: 50%;
+}
+.section__home-up h1{
+    padding-top: 128px;
+    padding-bottom: 48px;
+    font-weight: 700;
+font-size: 64px;
+line-height: 120%;
+color: #FFFFFF;
+}
+.section__home-up div{
+    display: flex;
+    
+}
+.section__home-up button{
+    margin-right: 10px;
+    padding: 16px 32px;
+display: flex;
+align-items: center;
+background: transparent;
+border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+border: none;
+transition: .7s;
+color: #FFFFFF;
+}
+.section__home-up button svg{
+    margin-right: 8px;
+}
+.section__home-up button:hover{
+    color: #1D2130;
+    box-shadow: 100px 3px 35px 117px rgba(255, 255, 255) inset;
+}
+.section__home-up button:hover svg :nth-child(2){
+    fill: rgb(255, 255, 255);
+}
+.section__home-up button:hover svg :nth-child(1){
+    fill: red;
+}
+.section__home-down{
+    margin-top: 10.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__home-down p{
+    font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+}
+.section__home-down span{
+    margin: 0 30px;
+    width: 65%;
+    height: 1px;
+    border: 1px solid #E5E5E5;
+backdrop-filter: blur(15px);
+}
