@@ -82,6 +82,9 @@ color: #FFFFFF;
     border: 1px solid #E5E5E5;
 backdrop-filter: blur(15px);
 }
+.card{
+    transform: scale(0.95);
+}
 
 
 /* ------------------ */
@@ -274,7 +277,7 @@ color: #FFFFFF;
 .line__read span{
     width: 70%;
     height: 1px;
-    background-color:  #000000;
+    background-color:  #E5E5E5;
 
 }
 
