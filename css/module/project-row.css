@@ -1,0 +1,103 @@
+
+.Projects{
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0px 24px;
+}
+.Projects__cards{
+    width: 411px;
+    height: 421px;
+    background:url(../../images/home-page/card-bag-1.png);
+}
+.Projects__cards:nth-child(2){
+    background:url(../../images/home-page/card-bag-2.png);
+}
+.Projects__cards:nth-child(3){
+    background:url(../../images/home-page/card-bag-3.png);
+}
+.Projects__cards__items{
+    padding: 80px 48px 46px 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+
+}
+#cards-pro{
+    background-color: rgba(0, 0, 0, .8);
+}
+.Projects__cards__items h3{
+    font-weight: 700;
+font-size: 28px;
+line-height: 150%;
+color: #FFFFFF;
+}
+.Projects__cards__items p{
+    padding-top: 16px;
+    padding-bottom: 64px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #FFFFFF;
+}
+.Projects__cards__items button{
+padding: 16px 32px;
+background: #FFFFFF;
+backdrop-filter: blur(40px);
+border-radius: 4px;
+transition: .7s;
+
+}
+.Projects__cards__items button a{
+    font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: right;
+color: #1D2130;
+transition: .7s;
+}
+.Projects__cards__items button:hover{
+    color: #1D2130;
+    box-shadow: 100px 3px 35px 117px rgb(0, 0, 0) inset;
+}
+.Projects__cards__items button:hover a{
+    color: #FFFFFF;
+}
+
+
+@media(max-width:1400px){
+    .Projects{
+        display: grid; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr ; 
+        gap: 20px 24px;
+    }
+}
+@media(max-width:900px){
+     .Projects{
+        display: grid; 
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 20px 24px;
+    }
+}
+@media(max-width:500px){
+    .Projects{
+        text-align: center;
+        justify-items: center;
+    }
+    .Projects__cards{
+        width: 311px;
+        height: 321px;
+       
+    }.Projects__cards__items{
+        padding: 18px 28px 26px 28px;
+    }
+    .Projects__cards__items p {
+        padding-top: 16px;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+}

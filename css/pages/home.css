@@ -4,7 +4,13 @@
 @import "../module/donate-card.css";
 @import "../module/news-row.css";
 @import "../module/event-row.css";
-
+a{
+    cursor: pointer;
+    color: #FFFFFF;
+}
+button{
+    cursor: pointer;
+}
 .home{
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +49,9 @@ color: #FFFFFF;
 .section__home-up button svg{
     margin-right: 8px;
 }
+.section__home-up button:hover a{
+    color: #1D2130;
+}
 .section__home-up button:hover{
     color: #1D2130;
     box-shadow: 100px 3px 35px 117px rgba(255, 255, 255) inset;
@@ -67,8 +76,8 @@ line-height: 21px;
 color: #FFFFFF;
 }
 .section__home-down span{
-    margin: 0 30px;
-    width: 63%;
+    margin: 0 20px;
+    width: 60%;
     height: 1px;
     border: 1px solid #E5E5E5;
 backdrop-filter: blur(15px);
@@ -95,9 +104,10 @@ color: #1D2130;
 }
 .we-help__section_left h3::before{
     content: url(../../images/home-page/Line.svg);
-    margin-left: -90px;
+    margin-left: -90px ;
     padding-right: 24px;
 }
+
 .we-help__section_left h2{
     padding-top: 32px;
     font-weight: 700;
@@ -138,9 +148,7 @@ color: #1D2130;
     line-height: 160%;
     color: #525560;
 }
-.we-help__section_left button{
 
-}
 
 .we-help__footer{
     display: flex;
@@ -207,6 +215,15 @@ margin-left: 76px;
 #care{
     padding-bottom: 32px;
 }
+
+
+
+/* ------------- */
+
+
+
+
+
 @media (max-width:1000px){
     .we-help__section{
         flex-direction: column;
