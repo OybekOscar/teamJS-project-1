@@ -18,7 +18,9 @@ html{
 
 .conteiner{
     position: relative;
-    max-width: 1240px;
+    
+    /* padding: 0px 200px; */
+    max-width: 836px;
     /* display: flex; */
     margin: 0px auto;
     display: grid;
