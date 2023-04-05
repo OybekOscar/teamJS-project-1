@@ -1,13 +1,61 @@
 @import "../base/reset.css";
 @import "../layout/container.css";
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf) format('truetype');
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: #4f585e;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
 main .section1 {
   background-color: #EFF7F2;
-  padding-top: 96px;
+  padding-top: 170px;
   padding-bottom: 96px;
 }
 
@@ -111,6 +159,227 @@ main .section1 .sec1 .section__right .right .right-img .qiz {
   margin-right: 24px;
 }
 
+
+
+
+
+
+
+a.btn {
+  background: #0096a0;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  display: inline-block;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+}
+
+.no-touch a.btn:hover {
+  background: #00a2ad;
+  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+
+.no-touch a.btn:active,
+a.btn:active {
+  background: #008a93;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  transform: translate3d(0, 1px, 0);
+  transition: all 0.025s 0s ease-out;
+}
+
+div.cards {
+  margin: 2px auto;
+  text-align: center;
+}
+
+div.card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 4px;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  width: 302px;
+  z-index: 1;
+}
+
+div.card .card__image-holder {
+  background: rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 62%;
+}
+
+div.card .card__image-holder .card__image {
+  width: 100%;
+}
+
+div.card div.card-title {
+  background: #ffffff;
+  padding: 6px 15px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+div.card div.card-title a.toggle-info {
+  border-radius: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+}
+
+div.card div.card-title a.toggle-info span {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: all 0.15s 0s ease-out;
+  width: 12px;
+}
+
+div.card div.card-title a.toggle-info span.left {
+  right: 14px;
+  transform: rotate(45deg);
+}
+
+div.card div.card-title a.toggle-info span.right {
+  left: 14px;
+  transform: rotate(-45deg);
+}
+
+div.card div.card-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+div.card div.card-description {
+  padding: 0 15px 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+div.card div.card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+
+div.card div.card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+
+div.card div.flap1 {
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+
+div.card div.flap2 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+
+div.cards.showing div.card {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(0.90);
+  transition: .6s;
+  margin: 1px 0px;
+}
+
+.no-touch div.cards.showing div.card:hover {
+  opacity: 0.94;
+  transform: scale(0.92);
+}
+
+div.card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+div.card.show div.card-title a.toggle-info {
+  background: #ff6666 !important;
+}
+
+div.card.show div.card-title a.toggle-info span {
+  top: 15px;
+}
+
+div.card.show div.card-title a.toggle-info span.left {
+  right: 10px;
+}
+
+div.card.show div.card-title a.toggle-info span.right {
+  left: 10px;
+}
+
+div.card.show div.card-flap {
+  background: #ffffff;
+  transform: rotateX(0deg);
+}
+
+div.card.show div.flap1 {
+  transition: all 0.3s 0s ease-out;
+}
+
+div.card.show div.flap2 {
+  transition: all 0.3s 0.2s ease-out;
+}
+
+main .section2 {
+  margin-top: 96px;
+  margin-bottom: 48px;
+}
+
+main .section2 .sec2 {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+main .section2 .sec2 h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: #1D2130;
+  margin-bottom: 16px;
+}
+
+main .section2 .sec2 .edit {
+  width: 27%;
+  margin: auto;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #525560;
+}
+
+
+
+
+
+
 main .section3 .sec3 {
   margin-bottom: 90px;
 }
@@ -157,7 +426,7 @@ main .section3 .sec3 .bottom .left {
 }
 
 main .section3 .sec3 .bottom .left:hover {
-  box-shadow: 4px 2px 10px 3px rgb(232, 229, 229) ;
+  box-shadow: 4px 2px 10px 3px rgb(232, 229, 229);
 }
 
 main .section3 .sec3 .bottom .left h1 {
@@ -229,6 +498,568 @@ main .section3 .sec3 .bottom .left .r {
 }
 
 
+main .contact {
+  background-color: #EBF0F9;
+  padding-top: 170px;
+  padding-bottom: 96px;
+}
+
+main .contact .con1 {
+  display: flex;
+}
+
+main .contact .con1 .img {
+  margin-right: 24px;
+}
+
+main .contact .con1 .contact__right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main .contact .con1 .contact__right .top {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1D2130;
+}
+
+main .contact .con1 .contact__right h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #1D2130;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+main .contact .con1 .contact__right .aenean {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #525560;
+  margin-bottom: 32px;
+}
+
+main .contact .con1 .contact__right a {
+  cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid #70c174;
+  background-color: #70C174;
+  color: white;
+  transition: .5s;
+}
+
+main .contact .con1 .contact__right a:hover {
+  background-color: transparent;
+  color: #70C174;
+}
+
+main .contact .con1 .contact__right a button {
+  padding: 16px 32px;
+}
+
+main .contact .con1 .contact__right .right {
+  width: 100%;
+  margin-left: 150px;
+}
+
+main .contact .con1 .contact__right .right .iconlar {
+  display: flex;
+}
+
+main .contact .con1 .contact__right .right .iconlar .icon2 {
+  margin-left: 20px;
+}
+
+main .contact .con1 .contact__right .right h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  color: #1D2130;
+  /* margin-top: 32px; */
+  margin-bottom: 10px;
+}
+
+main .contact .con1 .contact__right .right .fl {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+main .contact .con1 .contact__right .right .p {
+  margin-bottom: 32px;
+  color: #1D2130;
+}
+
+main .contact .con1 .contact__right .right .fl .hello {
+  margin-left: 32px;
+}
+
+main .contact .con1 .contact__right .right .right-img {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+main .contact .con1 .contact__right .right .right-img .dont {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1D2130;
+  margin-bottom: 10px;
+}
+
+main .contact .con1 .contact__right .right .right-img .lor {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #525560;
+}
+
+main .contact .con1 .contact__right .right .right-img .qiz {
+  margin-right: 24px;
+}
+
+
+main .inputlar {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+main .inputlar .input {
+  width: 50%;
+  margin: auto;
+}
+
+main .inputlar .input .input1 {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+main .inputlar .input .input1 .in {
+  width: 100%;
+}
+
+main .inputlar .input .input1 .in1 {
+  margin-right: 10px;
+}
+
+main .inputlar .input .input1 .in2 {
+  margin-left: 10px;
+}
+
+main .inputlar .input .input1 input {
+  width: 100%;
+  padding: 4px 0px;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  border-bottom: 1px solid #4b4848;
+  margin-top: 8px;
+}
+
+main .inputlar .input .input2 {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+main .inputlar .input .input2 .in {
+  width: 90%;
+}
+
+main .inputlar .input .input2 input {
+  width: 100%;
+  padding: 4px 0px;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  border-bottom: 1px solid #4b4848;
+  margin-top: 8px;
+}
+
+main .inputlar .input .textarea {
+  width: 100%;
+}
+
+main .inputlar .input .textarea textarea {
+  width: 100%;
+  padding: 20px;
+}
+
+main .inputlar .input .button {
+  text-align: center;
+}
+
+main .inputlar .input .input2 .in1 {
+  margin-right: 10px;
+}
+
+main .inputlar .input .input2 .in2 {
+  margin-left: 10px;
+}
+
+main .inputlar .input .button {
+  margin-top: 40px;
+}
+
+main .inputlar .input .button button {
+  all: unset;
+}
+
+main .inputlar .input .button a {
+  all: unset;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #70C174;
+  background-color: #70C174;
+  border-radius: 4px;
+  padding: 16px 32px;
+  transition: .5s;
+}
+
+main .inputlar .input .button a:hover {
+  background-color: transparent;
+  color: #70C174;
+}
+
+
+main .donate {
+  background-color: #EFF7F2;
+  padding-top: 170px;
+  padding-bottom: 96px;
+}
+
+main .donate .don {
+  display: flex;
+}
+
+main .donate .don .img {
+  margin-right: 24px;
+}
+
+main .donate .don .donate__right {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+main .donate .don .donate__right .top {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1D2130;
+}
+
+main .donate .don .donate__right h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #1D2130;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+main .donate .don .donate__right .aenean {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #525560;
+  margin-bottom: 32px;
+}
+
+main .donate .don .donate__right a {
+  cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid #70c174;
+  background-color: #70C174;
+  color: white;
+  transition: .5s;
+}
+
+main .donate .don .donate__right a:hover {
+  background-color: transparent;
+  color: #70C174;
+}
+
+main .donate .don .donate__right a button {
+  padding: 16px 32px;
+}
+
+main .donate .don .donate__right .righ {
+  width: 90%;
+}
+
+main .donate .don .donate__right .lef {
+  margin-right: 30px;
+}
+
+main .donate .don .donate__right .righ img {
+  width: 100%;
+}
+
+main .donate .don .donate__right .right .iconlar {
+  display: flex;
+}
+
+main .donate .don .donate__right .right .iconlar .icon2 {
+  margin-left: 20px;
+}
+
+main .donate .don .donate__right .right h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  color: #1D2130;
+  /* margin-top: 32px; */
+  margin-bottom: 10px;
+}
+
+main .donate .don .donate__right .right .fl {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+main .donate .don .donate__right .right .p {
+  margin-bottom: 32px;
+  color: #1D2130;
+}
+
+main .donate .don .donate__right .right .fl .hello {
+  margin-left: 32px;
+}
+
+main .donate .don .donate__right .right .right-img {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+main .donate .don .donate__right .right .right-img .dont {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1D2130;
+  margin-bottom: 10px;
+}
+
+main .donate .don .donaten__right .right .right-img .lor {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #525560;
+}
+
+main .donate .don .donaten__right .right .right-img .qiz {
+  margin-right: 24px;
+}
+
+main .how {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+main .how .how2 {
+  display: flex;
+}
+
+main .how .how2 .h1 {
+  margin-bottom: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #1D2130;
+}
+
+main .how .how2 .chap {
+  width: 100%;
+}
+
+main .how .how2 .how-right {
+  width: 100%;
+  margin-left: 96px;
+}
+
+main .how .how2 .how-right .right {
+  display: flex;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #E5E5E5;
+  justify-content: space-between;
+}
+
+main .how .how2 .how-right .right .over {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #70C174;
+}
+
+main .use {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+main .use .use2 {
+  display: flex;
+}
+
+main .use .use2 .bir {
+  width: 100%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #1D2130;
+}
+main .use .use2 .bir h1 {
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #1D2130;
+}
+
+main .use .use2 .ikki {
+  width: 100%;
+  margin-left: 98px;
+  margin-right: 96px;
+}
+
+main .use .use2 .uch {
+  width: 100%;
+}
+
+main .section4 {
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+main .section4 .sec4 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.473)), url(../../images/home/contribute.png);
+  width: 100%;
+  height: 384px;
+  margin-bottom: 96px;
+  border-radius: 10px;
+}
+
+main .section4 .sec4 h1 {
+  width: 50%;
+  margin: auto;
+  padding-top: 90px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
+
+main .section4 .sec4 .button {
+  display: flex;
+  justify-content: center;
+}
+
+main .section4 .sec4 .button .donatee {
+  margin-left: 32px;
+}
+
+main .section4 .sec4 .button button {
+  all: unset;
+  cursor: pointer;
+}
+
+main .section4 .sec4 .button .join a {
+  border-radius: 4px;
+  background-color: #70C174;
+  color: white;
+  padding: 16px 32px;
+  border: 1px solid #70C174;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  transition: .5s;
+}
+
+main .section4 .sec4 .button .join a:hover {
+  background-color: transparent;
+}
+
+main .section4 .sec4 .button .donatee a {
+  padding: 16px 32px;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  transition: .5s;
+}
+
+main .section4 .sec4 .button .donatee a:hover {
+  background-color: transparent;
+  color: white;
+}
+
+main .hr {
+  padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1400px) {
   main .section1 .sec1 {
     width: 90%;
@@ -242,7 +1073,9 @@ main .section3 .sec3 .bottom .left .r {
   main .section3 .sec3 {
     width: 90%;
     margin: auto;
+    margin-bottom: 96px;
   }
+
 }
 
 @media (max-width: 1285px) {
@@ -263,9 +1096,51 @@ main .section3 .sec3 .bottom .left .r {
   }
 }
 
+@media (max-width: 1111px) {
+  main .donate .don {
+    flex-direction: column;
+  }
+
+  main .donate .don .img {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1110px) {
+  main .section4 .sec4 h1 {
+    font-size: 40px;
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  main .contact .con1 {
+    flex-direction: column;
+  }
+
+  main .contact .con1 .img {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 1070px) {
   .section3 .sec3 .flex .bottom .left .r .ikki .say {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  main .section2 .sec2 .edit {
+    width: 40%;
+    margin: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #525560;
   }
 }
 
@@ -276,6 +1151,67 @@ main .section3 .sec3 .bottom .left .r {
 
   .section3 .sec3 .flex .bottom .left .r {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  main .contact .con1 .contact__right .right {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  main .donate .don .donate__right {
+    flex-direction: column;
+  }
+
+  main .donate .don .donate__right .righ {
+    margin-top: 40px;
+  }
+
+  main .how .how2 .how-right {
+    margin-left: 40px;
+  }
+
+}
+
+@media (max-width: 875px) {
+  main .section4 .sec4 h1 {
+    font-size: 35px;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  main .use .use2 .bir, .ikki, .uch {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  main .section2 .sec2 .edit {
+    width: 60%;
+    margin: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #525560;
+  }
+}
+
+@media (max-width: 840px) {
+  main .use .use2 .bir, .ikki, .uch {
+    width: 90%;
+    margin: auto;
+  }
+  main .use .use2 .ikki {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -298,6 +1234,16 @@ main .section3 .sec3 .bottom .left .r {
   }
 }
 
+@media (max-width: 800px) {
+  main .how .how2 {
+    flex-direction: column;
+  }
+  main .how .how2 .how-right {
+    margin: 0px;
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 744px) {
   main .section1 .sec1 {
     flex-direction: column;
@@ -308,9 +1254,75 @@ main .section3 .sec3 .bottom .left .r {
   }
 }
 
+@media (max-width: 840px) {
+  main .use .use2 {
+    flex-direction: column;
+  }
+  main .use .use2 .bir {
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  main .use .use2 .ikki {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  main .use .use2 .uch {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  main .contact .con1 .contact__right h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 630px) {
+  main .contact .con1 .contact__right {
+    flex-direction: column;
+  }
+
+  main .contact .con1 .contact__right .right {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  main .section2 .sec2 .edit {
+    width: 90%;
+    margin: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #525560;
+  }
+
+  main .section2 .sec2 h1 {
+    font-size: 38px;
+  }
+}
+
 @media (max-width: 570px) {
   main .section1 .sec1 .section__right h1 {
     font-size: 46px;
+  }
+}
+
+@media (max-width: 550px) {
+  main .donate .don .donate__right h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 535px) {
+  main .section4 .sec4 h1 {
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -348,5 +1360,39 @@ main .section3 .sec3 .bottom .left .r {
   .section3 .sec3 .flex .bottom .left {
     justify-content: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  main .section4 .sec4 .button {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  main .section4 .sec4 .button .donatee {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  main .section4 .sec4 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  main .section4 .sec4 h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 28px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  main .section4 .sec4 {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 330px) {
+  main .contact .con1 .contact__right h1 {
+    font-size: 40px;
   }
 }
