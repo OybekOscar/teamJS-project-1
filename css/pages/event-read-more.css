@@ -438,6 +438,6 @@ main .section3 .sec3 .bottom .left .r {
 @media (max-width: 300px){
     .conteiner{
         display: grid;
-        grid-template-columns:;
+        /* grid-template-columns:; */
     }
 }
