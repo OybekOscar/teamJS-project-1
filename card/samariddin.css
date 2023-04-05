@@ -63,6 +63,8 @@ a.btn:active {
   transition: all 0.025s 0s ease-out;
 }
 div.cards {
+  display: flex;
+  justify-content: space-between;
   margin: 2px auto;
   color: #4f585e;
   font-family: 'Source Sans Pro', sans-serif;
