@@ -1,5 +1,7 @@
 
 .Projects{
+    margin-top: 64px;
+    margin-bottom: 96px;
     display: grid; 
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -17,7 +19,7 @@
     background:url(../../images/home-page/card-bag-3.png);
 }
 .Projects__cards__items{
-    padding: 80px 48px 46px 48px;
+    padding: 80px 48px 50px 48px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 12px;
 
@@ -45,9 +47,11 @@ background: #FFFFFF;
 backdrop-filter: blur(40px);
 border-radius: 4px;
 transition: .7s;
+border: none;
 
 }
 .Projects__cards__items button a{
+    
     font-weight: 500;
 font-size: 16px;
 line-height: 19px;
@@ -78,6 +82,8 @@ transition: .7s;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         gap: 20px 24px;
+        text-align: center;
+        justify-items: center;
     }
 }
 @media(max-width:500px){
