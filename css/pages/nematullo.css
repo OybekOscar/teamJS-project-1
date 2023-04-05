@@ -1048,6 +1048,18 @@ main .hr {
 
 
 
+main .section4 .sec4 .button .join .modal .modal-dialog .modal-content .modal-body .btn {
+  padding: 16px 32px;
+  background-color: #70C174;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  width: 87%;
+}
+
+
+
 
 
 
