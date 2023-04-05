@@ -4,6 +4,7 @@
 @import "../module/donate-card.css";
 @import "../module/news-row.css";
 @import "../module/event-row.css";
+@import "../module/samariddin-cards.css";
 a{
     cursor: pointer;
     color: #FFFFFF;
@@ -11,6 +12,11 @@ a{
 button{
     cursor: pointer;
 }
+
+/* -------------- */
+
+
+
 .home{
     background-repeat: no-repeat;
     background-size: cover;
