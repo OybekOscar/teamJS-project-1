@@ -162,13 +162,13 @@ input[type="checkbox"] {
 }
 
 .conteiner{
-    max-width: 678px;
+    max-width: 1240px;
     margin: 0px auto;
     /* margin-bottom: 97px; */
 }
 
 .main-1 {
-    max-width: 678px;
+    max-width: 1240px;
     margin: 0px auto;
     /* margin-bottom: 97px; */
 }
@@ -432,5 +432,12 @@ main .section3 .sec3 .bottom .left .r {
     .section3 .sec3 .flex .bottom .left {
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 300px){
+    .conteiner{
+        display: grid;
+        grid-template-columns:;
     }
 }
