@@ -11,7 +11,7 @@
     background-image: url(../../images/home-page/BG\ Image.png);
 }
 .section__home-up{
-    width: 50%;
+    width: 52%;
 }
 .section__home-up h1{
     padding-top: 128px;
@@ -54,6 +54,7 @@ color: #FFFFFF;
 }
 .section__home-down{
     margin-top: 10.5%;
+    padding-bottom: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,4 +71,17 @@ color: #FFFFFF;
     height: 1px;
     border: 1px solid #E5E5E5;
 backdrop-filter: blur(15px);
+}
+
+
+/* ------------------ */
+
+.we-help__section{
+
+}
+.we-help__section_right{
+    position: relative;
+    width: 480px;
+    height: 578px;
+    background: url(../../images/home-page/BG.png);
 }
