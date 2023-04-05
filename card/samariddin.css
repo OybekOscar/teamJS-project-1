@@ -83,7 +83,7 @@ div.card {
 }
 
 div.card .card__image-holder {
-  background: rgba(0, 0, 0, 0.1);
+ 
   height: 0;
   padding-bottom: 62%;
 }
