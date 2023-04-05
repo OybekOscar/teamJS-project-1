@@ -77,11 +77,41 @@ backdrop-filter: blur(15px);
 /* ------------------ */
 
 .we-help__section{
-
+display: flex;
+margin-top: 96px;
+}
+.we-help__section_left{
+    padding: 0 96px;
+}
+.we-help__section_left h3{
+    padding-top: 62px;
+    font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #1D2130;
+}
+.we-help__section_left h3::before{
+    content: url(../../images/home-page/Line.svg);
+    margin-left: -96px;
+    padding-right: 24px;
+}
+.we-help__section_left h2{
+    padding-top: 32px;
+    font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+color: #1D2130;
 }
 .we-help__section_right{
     position: relative;
     width: 480px;
-    height: 578px;
-    background: url(../../images/home-page/BG.png);
+    
+}
+.we-help__section_right img{
+    width: 480px;
+}
+.we-help__section_left h2{
+
 }
