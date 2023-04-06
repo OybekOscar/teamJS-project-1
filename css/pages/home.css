@@ -372,7 +372,14 @@ color: #FFFFFF;
     }
 }
 @media (max-width:850px){
-    
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    main .section3 .sec3 .bottom2{
+        margin-left: 0;
+        margin-top: 20px;
+    }
     .black__section{
         display: flex;
         flex-direction: column;
