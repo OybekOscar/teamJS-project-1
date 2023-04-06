@@ -39,6 +39,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 a.btn {
   background: #0096a0;

@@ -4,7 +4,9 @@
     font-size: 16px;
     color: #525560;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 
 section{
     max-width: 1140px;

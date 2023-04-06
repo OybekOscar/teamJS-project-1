@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+  }
 .Projects{
     margin-top: 64px;
     margin-bottom: 96px;
