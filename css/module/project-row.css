@@ -85,6 +85,7 @@ transition: .7s;
         text-align: center;
         justify-items: center;
     }
+    
 }
 @media(max-width:500px){
     .Projects{

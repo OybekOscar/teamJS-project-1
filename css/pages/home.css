@@ -4,6 +4,7 @@
 @import "../module/donate-card.css";
 @import "../module/news-row.css";
 @import "../module/event-row.css";
+@import "../module/samariddin-cards.css";
 a{
     cursor: pointer;
     color: #FFFFFF;
@@ -11,6 +12,11 @@ a{
 button{
     cursor: pointer;
 }
+
+/* -------------- */
+
+
+
 .home{
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,6 +87,9 @@ color: #FFFFFF;
     height: 1px;
     border: 1px solid #E5E5E5;
 backdrop-filter: blur(15px);
+}
+.card{
+    transform: scale(0.95);
 }
 
 
@@ -274,7 +283,7 @@ color: #FFFFFF;
 .line__read span{
     width: 70%;
     height: 1px;
-    background-color:  #000000;
+    background-color:  #E5E5E5;
 
 }
 
