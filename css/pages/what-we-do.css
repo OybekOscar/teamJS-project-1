@@ -261,6 +261,25 @@ color: #1D2130;
 .about{
     padding-top: 96px;
 }
+@media (max-width:900px){
+  .about__home{
+    flex-direction: column;
+    align-items: center;
+  }
+  #pp {
+    margin-bottom: 50px;
+  }
+}@media(max-width:850px){
+
+  main .section3 .sec3 .flex{
+    display: flex;
+    flex-direction: column;
+
+}
+main .section3 .sec3 .bottom2{
+  margin-left: 0;
+  margin-top: 20px;
+}}
 @media ( max-width : 800px ){
   .casti{
     grid-template-columns: 1fr 1fr;
@@ -271,3 +290,12 @@ color: #1D2130;
     grid-template-columns: 1fr 1fr;
   }
 }
+@media only screen and (max-width:550px){
+  .about__home__right img{
+    width: 80%;
+  }
+
+
+}
+
+
