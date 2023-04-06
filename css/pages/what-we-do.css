@@ -12,6 +12,9 @@
 @import url(../base/reset.css);
 @import url(../base/font.css);
 
+html {
+  scroll-behavior: smooth;
+}
 main .section4 .sec4 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.473)), url(../../images/home/contribute.png);
     width: 100%;
