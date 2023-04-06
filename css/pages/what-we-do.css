@@ -1,0 +1,226 @@
+@import "../global.css";
+@import "../module/general-header.css";
+@import "../module/donate-card.css";
+@import "../module/news-row.css";
+@import "../module/event-row.css";
+@import "../global.css";
+@import "../module/general-header.css";
+@import "../module/donate-card.css";
+@import "../module/news-row.css";
+@import "../module/event-row.css";
+@import url(../layout/container.css);
+@import url(../base/reset.css);
+@import url(../base/font.css);
+@import url(../pages/home.css);
+@import url(../pages/nematullo.css);
+
+main .section4 .sec4 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.473)), url(../../images/home/contribute.png);
+    width: 100%;
+    height: 384px;
+    margin-bottom: 96px;
+    border-radius: 10px;
+  }
+  
+  main .section4 .sec4 h1 {
+    width: 50%;
+    margin: auto;
+    padding-top: 90px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding-bottom: 32px;
+  }
+  
+  main .section4 .sec4 .button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  main .section4 .sec4 .button .donate {
+    margin-left: 32px;
+  }
+  
+  main .section4 .sec4 .button button {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  main .section4 .sec4 .button .join a {
+    border-radius: 4px;
+    background-color: #70C174;
+    color: white;
+    padding: 16px 32px;
+    border: 1px solid #70C174;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: .5s;
+  }
+  
+  main .section4 .sec4 .button .join a:hover {
+    background-color: transparent;
+  }
+  
+  main .section4 .sec4 .button .donate a {
+    padding: 16px 32px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: .5s;
+  }
+  
+  main .section4 .sec4 .button .donate a:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .section4{
+    padding-top: 96px;
+  }
+  
+  @media (max-width: 1110px) {
+    main .section4 .sec4 h1 {
+      font-size: 40px;
+      width: 60%;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 875px) {
+    main .section4 .sec4 h1 {
+      font-size: 35px;
+      width: 70%;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 535px) {
+    main .section4 .sec4 h1 {
+      font-size: 30px;
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    main .section4 .sec4 .button {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    main .section4 .sec4 .button .donate {
+      margin-top: 50px;
+      margin-left: 0px;
+    }
+    main .section4 .sec4 {
+      height: auto;
+      padding-bottom: 40px;
+    }
+    main .section4 .sec4 h1 {
+      width: 90%;
+      margin: auto;
+      font-size: 28px;
+    }
+  
+  }
+  
+  @media (max-width: 360px) {
+    main .section4 .sec4 {
+      background-size: cover;
+    }
+  }
+.about__home{
+    display: flex;
+    padding-top: 96px;
+    position: relative;
+}
+.flex{
+    display: flex;
+}
+.about__home__left h4{
+    font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+padding-left: 24px;
+letter-spacing: 2px;
+text-transform: uppercase;
+
+/* Primary text */
+
+color: #1D2130;
+
+}
+p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #1D2130;
+opacity: 0.7;
+}
+.about__home__left h1{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 120%;
+/* or 67px */
+margin-top: 32px;
+padding-left: 94px;
+padding-top: 0 !important;
+/* Primary text */
+
+color: #1D2130;
+}
+.about__home__right h5{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    
+    
+    /* Primary text */
+    
+    color: #1D2130;
+    
+}
+
+.about__home__right{
+   padding-bottom: 96px;
+}
+.environtment{
+    background: #EFF7F2;
+}
+.build{
+    display: flex;
+    align-items: center;
+}
+.build img{
+    margin-right: 24px;
+}
+.casti{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.cast1 p{
+margin-left: 50px;
+}
+ 
+
+.about{
+    padding-top: 96px;
+}
