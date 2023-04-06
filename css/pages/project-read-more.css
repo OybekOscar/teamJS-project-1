@@ -1,10 +1,16 @@
 @import "../global.css";
+/* @import "../pages/samariddin.css"; */
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     font-family: 'Roboto';
 }
 
@@ -12,7 +18,9 @@
 
 .conteiner{
     position: relative;
-    max-width: 832px;
+    
+    /* padding: 0px 200px; */
+    max-width: 1240px;
     /* display: flex; */
     margin: 0px auto;
     display: grid;
@@ -60,7 +68,7 @@
     margin-top: 20px;
     font-size: 16px;
     font-weight: 700;
-    /* list-style-type: circle; */
+    list-style-type: square;
 }
 
 .qwerty{
@@ -89,9 +97,15 @@
 }
 
 .content{
-    
+    position: relative;
     margin-left: 200px;
     width: 436px;
+}
+
+.content img{
+    display: flex;
+    position: absolute;
+    left: -50px;
 }
 
 
@@ -272,140 +286,10 @@ input[type="checkbox"] {
     display: none;
 }
 
-@media (max-width: 920px) {
-    .nav .menu-btn i {
-        display: block;
-    }
-
-    #click:checked~.menu-btn i:before {
-        content: "\f00d";
-    }
-
-    .nav {
-        padding: 0px 30px;
-    }
-
-    .nav ul {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background: #111;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
-
-    #click:checked~ul {
-        left: 0;
-    }
-
-    .nav ul li {
-        width: 100%;
-        margin: 40px 0;
-    }
-
-    .nav ul li a {
-        width: 100%;
-        margin-left: -100%;
-        display: block;
-        font-size: 20px;
-        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    #click:checked~ul li a {
-        margin-left: 0px;
-    }
-
-    .nav ul li a.active,
-    .nav ul li a:hover {
-        background: none;
-        color: cyan;
-    }
-}
-
-
-@media(max-width:1400px) {
-    .Projects {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px 24px;
-    }
-}
-
-@media(max-width:900px) {
-    .Projects {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        gap: 20px 24px;
-    }
-}
-
-@media(max-width:500px) {
-    .Projects {
-        text-align: center;
-        justify-items: center;
-    }
-
-    .Projects__cards {
-        width: 311px;
-        height: 321px;
-
-    }
-
-    .Projects__cards__items {
-        padding: 18px 28px 26px 28px;
-    }
-
-    .Projects__cards__items p {
-        padding-top: 16px;
-        padding-bottom: 20px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
-        color: #FFFFFF;
-    }
-}
-
-
-@media(max-width: 1060px) {
-    .qwerty-item{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-@media(max-width: 830px){
-    .back-img img{
-        width: 600px;
-        /* height: 300px; */
-    }
-}
-
-@media(max-width: 600px){
-    /* .back-img img{
-        width: 300px;
-    } */
-    .conteiner{
-        margin: 0px;
-        padding: 0px;
-    }
-    .content{
-        margin-left: 0px;
-    }
-}
-
-@media(max-width: 600px){
-    .back-img img{
-        width: 300px;
-    }
-}
 
 main .section4{
     display: grid;
-    margin-left: 80px;
+    margin-left: 0px;
 }
 
 main .section4 .sec4 {
@@ -482,6 +366,14 @@ main .section4 .sec4 .button .donate a:hover {
     color: white;
 }
 
+@media(max-width:1400px) {
+    .Projects {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 24px;
+    }
+}
 
 @media (max-width: 1110px) {
     main .section4 .sec4 h1 {
@@ -491,11 +383,104 @@ main .section4 .sec4 .button .donate a:hover {
     }
 }
 
+@media(max-width: 1060px) {
+    .qwerty-item{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 830px){
+    .back-img img{
+        width: 600px;
+        /* height: 300px; */
+    }
+}
+
+@media (max-width: 920px) {
+    .nav .menu-btn i {
+        display: block;
+    }
+    
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+    
+    .nav {
+        padding: 0px 30px;
+    }
+    
+    .nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    
+    #click:checked~ul {
+        left: 0;
+    }
+    
+    .nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+    
+    .nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+    
+    .nav ul li a.active,
+    .nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+}
+
+@media(max-width:900px) {
+    .Projects {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 20px 24px;
+    }
+}
 @media (max-width: 875px) {
     main .section4 .sec4 h1 {
         font-size: 35px;
         width: 70%;
         margin: auto;
+    }
+}
+
+@media(max-width: 600px){
+    /* .back-img img{
+        width: 300px;
+    } */
+    .conteiner{
+        margin: 0px;
+        padding: 0px;
+    }
+    .content{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 600px){
+    .back-img img{
+        width: 300px;
     }
 }
 
@@ -507,23 +492,49 @@ main .section4 .sec4 .button .donate a:hover {
     }
 }
 
+@media(max-width:500px) {
+    .Projects {
+        text-align: center;
+        justify-items: center;
+    }
+
+    .Projects__cards {
+        width: 311px;
+        height: 321px;
+
+    }
+
+    .Projects__cards__items {
+        padding: 18px 28px 26px 28px;
+    }
+
+    .Projects__cards__items p {
+        padding-top: 16px;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+}
+
 @media (max-width: 400px) {
     main .section4 .sec4 .button {
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
-
+    
     main .section4 .sec4 .button .donate {
         margin-top: 50px;
         margin-left: 0px;
     }
-
+    
     main .section4 .sec4 {
         height: auto;
         padding-bottom: 40px;
     }
-
+    
     main .section4 .sec4 h1 {
         width: 90%;
         margin: auto;
@@ -537,6 +548,12 @@ main .section4 .sec4 .button .donate a:hover {
         background-size: cover;
     }
 }
+
+
+
+
+
+
 
 
 
